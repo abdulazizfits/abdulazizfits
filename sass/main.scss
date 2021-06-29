@@ -1,0 +1,55 @@
+$eror:#e26767;
+$succsess:#0a5949;
+
+%vhcentre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-image: url("./../img/back.png");
+    background-size: cover;
+    background-position:top center ;
+    min-height: 100vh;
+    text-align: center;
+    font-size: 50px !important;
+    font-weight: bold !important;
+}
+.img{
+    position: fixed;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+}
+.timer{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    @extend %vhcentre;
+    border:10px solid $succsess;
+    box-shadow: 0 10px 30px 0 rgba($color: #000000, $alpha: 0.5);
+    background-color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 auto;
+    color: $succsess;
+}
+.box{
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    @extend %vhcentre; 
+    background-color: rgba($color: #267496, $alpha: 0.4);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px 0 rgba($color: #000000, $alpha: 0.3);
+    margin-bottom: 20px;
+    position: relative;
+}
+.number{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+}
